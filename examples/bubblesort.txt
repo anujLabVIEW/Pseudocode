@@ -1,0 +1,18 @@
+DECLARE Index : INTEGER
+DECLARE Found : BOOL
+
+Found <- FALSE
+Index <- 1
+
+REPEAT
+    IF List[Index] = Item
+      THEN
+        Found <- TRUE
+    ENDIF
+    Index <- Index + 1
+UNTIL (Found = TRUE) OR (Index = 10)
+
+IF Found = TRUE
+  THEN
+    OUTPUT "Position is:", Index
+ENDIF

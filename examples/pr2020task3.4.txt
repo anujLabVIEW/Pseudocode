@@ -1,0 +1,10 @@
+PROCEDURE OutputChars(s : STRING)
+    OUTPUT LEFT(s, 1)
+    Len <- LENGTH(s)
+    IF Len > 1
+      THEN
+        OutputChars(RIGHT(s, Len - 1))
+    ENDIF
+ENDPROCEDURE
+
+CALL OutputChars("Hello World")

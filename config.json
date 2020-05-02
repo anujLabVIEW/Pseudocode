@@ -1,0 +1,9 @@
+{
+    "inputFile": "examples/floats.txt",
+    "run": false,
+    "outputFile": null,
+    "useTypeHints": true,
+    "includeHeader": true,
+    "passPseudocodeAsComment": false,
+    "passThroughComments": false
+}

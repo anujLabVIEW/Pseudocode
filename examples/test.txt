@@ -1,0 +1,11 @@
+IF a > b
+  THEN
+    OUTPUT 1
+  ELSE
+    IF a < b
+      THEN
+        OUTPUT -1
+      ELSE
+        OUTPUT 0
+    ENDIF
+ENDIF

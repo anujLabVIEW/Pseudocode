@@ -1,0 +1,10 @@
+PROCEDURE NewYearCountdown(Value : INTEGER)
+     IF Value = 0
+       THEN
+          OUTPUT "Happy New Year"
+       ELSE
+          Value <- Value - 1
+          OUTPUT Value
+          NewYearCountdown(Value)
+    ENDIF
+ENDPROCEDURE

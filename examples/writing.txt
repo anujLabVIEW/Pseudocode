@@ -1,0 +1,7 @@
+OPENFILE "temp/temp.txt" FOR WRITE
+
+FOR i <- 1 TO 10
+    WRITEFILE "temp/temp.txt", RND()
+ENDFOR
+
+CLOSEFILE "temp/temp.txt"

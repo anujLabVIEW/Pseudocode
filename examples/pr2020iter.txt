@@ -1,0 +1,7 @@
+PROCEDURE NewYearCountdown(Value : INTEGER)
+    WHILE Value > 0
+        Value <- Value - 1
+        OUTPUT Value
+    ENDWHILE
+    OUTPUT "Happy New Year"
+ENDPROCEDURE

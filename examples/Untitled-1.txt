@@ -1,0 +1,19 @@
+DECLARE StudentID : STRING
+DECLARE Email     : STRING
+DECLARE Temp      : STRING
+DECLARE x         : INTEGER
+
+OPENFILE "Students.txt" FOR APPEND
+
+FOR x <- 1 TO 2
+    OUTPUT "Enter Student ID: "
+    INPUT StudentID
+    OUTPUT "Enter Email Address: "
+    INPUT Email
+
+    Temp <- StudentID & "#" & Email & "\n"
+
+    WRITEFILE "Students.txt", Temp
+ENDFOR
+
+CLOSEFILE "Students.txt"

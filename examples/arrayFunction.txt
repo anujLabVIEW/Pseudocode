@@ -1,0 +1,13 @@
+FUNCTION IsIn(List : ARRAY [1:10] OF INTEGER, Item : INTEGER) RETURNS BOOLEAN
+    L <- LENGTH(List)
+    Flag <- FALSE
+    FOR i <- 1 TO L
+        IF List[i] = Item
+          THEN
+            Flag <- TRUE
+        ENDIF
+    ENDFOR
+    RETURN Flag
+ENDFUNCTION
+
+OUTPUT IsIn([1, 2, 3, 4, 5], 1)
